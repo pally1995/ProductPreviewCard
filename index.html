@@ -29,7 +29,13 @@
     <div class="container">
       <div class="card">
         <div class="columnLeft">
-          <img class="productImage" src="./images/image-product-desktop.jpg" alt="Product image" />
+          <picture>
+            <source
+              class="productImage" 
+              media="(max-width: 700px"
+              srcset="./images/image-product-mobile.jpg">
+            <img class="productImage" src="./images/image-product-desktop.jpg">
+          </picture>
         </div>
         <div class="columnRight">
           <h2>PERFUME</h2>
